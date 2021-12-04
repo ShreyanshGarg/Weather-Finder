@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express");
 const app=express();
 const ejs = require("ejs");
@@ -19,7 +21,7 @@ app.get("/compare",function(req,res){
 
 app.post("/",function(req,res){
 
-const url="https://api.openweathermap.org/data/2.5/weather?q=" + req.body.city+ "&appid=ca12fb1629468cadffc634e2c0147f83&units=metric";
+const url="https://api.openweathermap.org/data/2.5/weather?q=" + req.body.city+ "&appid="+String(process.env.TOKEN);
 
 
 
@@ -42,7 +44,7 @@ const compare=[];
   const name1=req.body.city1;
   const name2=req.body.city2;
   function one(name1){
-const urls = "https://api.openweathermap.org/data/2.5/weather?q="+name1+"&appid=ca12fb1629468cadffc634e2c0147f83&units=metric"
+const urls = "https://api.openweathermap.org/data/2.5/weather?q="+name1+"&appid="+String(process.env.TOKEN);
   https.get(urls,function(response){
   response.on("data",function(data){
     const weatherdata=JSON.parse(data);
@@ -57,13 +59,13 @@ const urls = "https://api.openweathermap.org/data/2.5/weather?q="+name1+"&appid=
       humidity:weatherdata.main.humidity
     };
 compare.push(post);
-console.log(compare);
+// console.log(compare);
 });
 });
 }
 one(name1);
 function two(name2){
-const urls = "https://api.openweathermap.org/data/2.5/weather?q="+name2+"&appid=ca12fb1629468cadffc634e2c0147f83&units=metric"
+const urls = "https://api.openweathermap.org/data/2.5/weather?q="+name2+"&appid="+String(process.env.TOKEN);
 https.get(urls,function(response){
 response.on("data",function(data){
   const weatherdata=JSON.parse(data);
@@ -78,7 +80,7 @@ response.on("data",function(data){
     humidity:weatherdata.main.humidity
   };
 compare.push(post);
-console.log(compare);
+// console.log(compare);
 setTimeout(function(){res.render("compare.ejs",{compare:compare});},3000);
 
 });
