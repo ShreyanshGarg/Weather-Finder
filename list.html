@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title></title>
+    <nav class="navbar navbar-default fixed-top" id="nav">
+      <div class="container">
+        <div class="navbar-header">
+          <p class="navbar-brand">DAILY JOURNAL</p>
+        </div>
+        <ul class="nav justify-content-end nav-pills">
+<li class="nav-item">
+  <a class="nav-link active" href="#">Find Weather</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Compare Weather</a>
+</li>
+
+</ul>
+    </nav>
+
+    <div>
+      <img src="C:\Users\SHREYANSH-PC\Desktop\Weatherproject\public\images\weatheralter2.jpg" class="img" alt="Weather Image">
+      </div>
+      <div class="searchbar">
+      <h1>Find The Weather Of Your City</h1>
+      <div class="input-group mb-3" id="searchbar">
+  <input type="text" class="form-control" name="city"  placeholder="City Name" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" name="submit" type="submit" id="submitbtn" onclick="submit(this.id)" >Submit</button>
+  </div>
+</div>
+</div>
+  </head>
+  <body>
+<!-- <table border="solid" style="    font-size: 15px; visibility: hidden; ">
+  <th style="    width: 316px;text-align: center;">description</th>
+  <th style="    width: 253px;text-align: center;">values</th>
+  <tr>
+    <td>City</td>
+    <td style="text-align: center">garg</td>
+  </tr>
+
+  <tr>
+    <td>Temp</td>
+    <td style="text-align: center">garg</td>
+  </tr>
+
+  <tr>
+    <td>Feels Like Temp</td>
+    <td style="text-align: center">garg</td>
+  </tr>
+
+  <tr>
+    <td>Minimum Temperature Of The City</td>
+    <td style="text-align: center">garg</td>
+  </tr>
+
+  <tr>
+    <td>Maximum Temperature Of The City</td>
+    <td style="text-align: center">garg</td>
+  </tr>
+
+  <tr>
+    <td>Humidity</td>
+    <td style="text-align: center">garg</td>
+  </tr>
+
+
+</table> -->
+
+<p id="rcorners1">Rounded corners! <span>Temp:39°C</span></p>
+
+<div class="extras">
+<p class="extracontent">Feels Like<span style="margin-left: 259px;">value<span></p>
+<hr>
+<p class="extracontent">Temp Minimum<span style="margin-left: 216px;">value<span></p>
+<hr>
+<p class="extracontent">Temp Maximum<span style="margin-left: 215px;">value<span></p>
+<hr>
+<p class="extracontent">Humidity<span style="margin-left: 264px;">value<span></p>
+<hr>
+</div>
+  </body>
+  <footer>
+      <p style="margin-top: 107px;text-align: center;font-size: 11px;color: darkslategrey;">© 2020 shreyansh garg. All rights reserved.</p>
+  </footer>
+  <script type="text/javascript">
+    document.querySelector("#submitbtn").addEventListener("click",function()
+    {
+      document.querySelector("table").style.visibility="visible";
+    });
+  </script>
+</html>

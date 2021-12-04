@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style2.css">
+    <title></title>
+    <nav class="navbar navbar-default fixed-top" id="nav">
+      <div class="container">
+        <div class="navbar-header">
+          <p class="navbar-brand">Weather Finder</p>
+        </div>
+        <ul class="nav justify-content-end nav-pills">
+<li class="nav-item">
+  <a class="nav-link " href="/">Find Weather</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link active" href="/compare">Compare Weather</a>
+</li>
+
+</ul>
+    </nav>
+
+    <div>
+      <img src="\images\island-during-golden-hour-and-upcoming-storm-1118873.jpg" class="img" alt="Weather Image" >
+      </div>
+      <div class="searchbar">
+      <h1>Compare The Weather OF Any Two Cities</h1>
+      <form  action="/compare" method="post">
+      <div clas="input" style="margin-left:56px">
+      <input type="text" name="city1" placeholder="Enter city name" class="cityname1">
+      <input type="text" name="city2" placeholder="Enter city name" class="cityname2">
+</div>
+      <button class="btn btn-primary" name="submit" type="submit" id="submitbtn">Compare</button>
+      </form>
+</div>
+</div>
+  </head>
+  <body>

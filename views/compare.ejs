@@ -1,0 +1,81 @@
+<%- include("partials/headercompare") %>
+
+
+
+<%for( var i = 0;i<compare.length;i++){%>
+<% if(i===0){%>
+  <div
+        style="margin-left: -161px;"" >
+  <h1><%= compare[i].name %></h1>
+  </div >
+
+  <table>
+    <tr>
+    <th><h2>Temperature</h2></th>
+    <th><h3><%= compare[i].temp %>°C</h3></th
+    </tr>
+    <tr>
+    <td>Feels Like</td>
+    <td><%= compare[i].feelslike %>°C</td>
+    </tr>
+    <tr>
+    <td>Minimum temperature</td>
+    <td><%= compare[i].tempmin %>°C</td>
+    </tr>
+    <tr>
+    <td>Maximum temperature</td>
+    <td><%= compare[i].tempmax %>°C</td>
+
+    </tr>
+    <tr>
+    <td>Humidity</td>
+    <td><%= compare[i].humidity %></td>
+
+    </tr>
+    <td>Pressure</td>
+    <td><%= compare[i].pressure %></td>
+
+
+    </tr>
+  </table>
+<%}else{%>
+  <div
+        style="margin-left: -161px;"" >
+  <h1><%= compare[i].name %></h1>
+  </div >
+
+  <table>
+    <tr>
+    <th><h2>Temperature</h2></th>
+    <th><h3><%= compare[i].temp %>°C</h3></th
+    </tr>
+    <tr>
+    <td>Feels Like</td>
+    <td><%= compare[i].feelslike %>°C</td>
+    </tr>
+    <tr>
+    <td>Minimum temperature</td>
+    <td><%= compare[i].tempmin %>°C</td>
+    </tr>
+    <tr>
+    <td>Maximum temperature</td>
+    <td><%= compare[i].tempmax %>°C</td>
+
+    </tr>
+    <tr>
+    <td>Humidity</td>
+    <td><%= compare[i].humidity %></td>
+
+    </tr>
+    <td>Pressure</td>
+    <td><%= compare[i].pressure %></td>
+
+
+  </table>
+
+<%}}%>
+
+
+
+
+<%- include("partials/footercompare") %>

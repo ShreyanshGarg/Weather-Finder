@@ -1,0 +1,63 @@
+.img{
+  height: 554px;
+    width: 100%;
+        margin-top: 47px;
+}
+
+h1{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  padding-top: 17px;
+    font-size: 2.6rem;
+}
+
+body{
+  background: whitesmoke;
+}
+
+#nav{
+  background-color: lightgray;
+}
+
+#searchbar{
+
+    width: 289px;
+    margin-top: 30px;
+}
+
+#rcorners1 {
+  border-radius: 25px;
+  background: chocolate;
+  padding: 20px;
+  width: 243px;
+  height: 200px;
+  margin-left: 901px;
+margin-top: 46px;
+color: white;
+font-size: x-large;
+font-family: monospace;
+font-size: 2.5rem;
+}
+
+.extras{
+  margin-top: -148px;
+}
+
+hr{
+  width: 425px;
+    margin-left: 260px;
+}
+.extracontent{
+  margin-left: 260px;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#submitbtn{
+  background-color: gainsboro;
+}
+
+.searchbar{
+  background-color: darkgray;
+    height: 199px;
+    text-align: -webkit-center;
+}
